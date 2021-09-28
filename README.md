@@ -1,6 +1,6 @@
 # DoublePlusBass
 
-This is a Eurorack module based on the schematic provided by Juanito Moore (in a Eurorack DIY Facebook group).
+This is a Eurorack module based on the schematic provided by Juanito Moore (in a Synth-DIY Facebook group).
 
 It's a kick drum module with more than enough pots for wiggling.
 
