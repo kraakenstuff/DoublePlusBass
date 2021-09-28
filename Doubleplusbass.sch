@@ -2210,4 +2210,336 @@ Wire Wire Line
 	6400 5400 6400 5500
 Wire Wire Line
 	6800 5400 6800 5500
+$Comp
+L Kraakenstuff:EuroPower J5
+U 1 1 6155560B
+P 1500 9150
+F 0 "J5" H 1525 8735 50  0000 C CNN
+F 1 "EuroPower" H 1525 8826 50  0000 C CNN
+F 2 "" H 1600 9000 50  0001 C CNN
+F 3 "" H 1600 9000 50  0001 C CNN
+	1    1500 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small D6
+U 1 1 615576E3
+P 2100 8950
+F 0 "D6" H 2100 8743 50  0000 C CNN
+F 1 "1N5189HW" H 2100 8834 50  0000 C CNN
+F 2 "" V 2100 8950 50  0001 C CNN
+F 3 "~" V 2100 8950 50  0001 C CNN
+	1    2100 8950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small D7
+U 1 1 61558444
+P 2100 9350
+F 0 "D7" H 2100 9557 50  0000 C CNN
+F 1 "1N5189HW" H 2100 9466 50  0000 C CNN
+F 2 "" V 2100 9350 50  0001 C CNN
+F 3 "~" V 2100 9350 50  0001 C CNN
+	1    2100 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C9
+U 1 1 61559BE4
+P 2650 8900
+F 0 "C9" V 2425 8900 50  0000 C CNN
+F 1 "10u" V 2516 8900 50  0000 C CNN
+F 2 "" H 2650 8900 50  0001 C CNN
+F 3 "~" H 2650 8900 50  0001 C CNN
+	1    2650 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 8950 2300 8950
+Wire Wire Line
+	2300 8950 2300 8700
+Wire Wire Line
+	2300 8700 2650 8700
+Wire Wire Line
+	2650 8700 2650 8800
+Wire Wire Line
+	1700 9050 1250 9050
+Wire Wire Line
+	1700 9150 1250 9150
+Wire Wire Line
+	1700 9250 1250 9250
+Wire Wire Line
+	1250 9050 1150 9050
+Wire Wire Line
+	1150 9050 1150 9150
+Wire Wire Line
+	1150 9250 1250 9250
+Connection ~ 1250 9050
+Connection ~ 1250 9250
+Wire Wire Line
+	1250 9150 1150 9150
+Connection ~ 1250 9150
+Connection ~ 1150 9150
+Wire Wire Line
+	1150 9150 1150 9250
+Wire Wire Line
+	1150 9150 1050 9150
+Wire Wire Line
+	1050 9150 1050 9250
+$Comp
+L power:GND #PWR043
+U 1 1 616271CB
+P 1050 9250
+F 0 "#PWR043" H 1050 9000 50  0001 C CNN
+F 1 "GND" H 1055 9077 50  0000 C CNN
+F 2 "" H 1050 9250 50  0001 C CNN
+F 3 "" H 1050 9250 50  0001 C CNN
+	1    1050 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 8950 2000 8950
+Wire Wire Line
+	1700 9350 2000 9350
+Wire Wire Line
+	1700 9150 2650 9150
+Wire Wire Line
+	2650 9150 2650 9000
+Connection ~ 1700 9150
+$Comp
+L Device:CP_Small C10
+U 1 1 616713F0
+P 2650 9400
+F 0 "C10" V 2425 9400 50  0000 C CNN
+F 1 "10u" V 2516 9400 50  0000 C CNN
+F 2 "" H 2650 9400 50  0001 C CNN
+F 3 "~" H 2650 9400 50  0001 C CNN
+	1    2650 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 9150 2650 9300
+Connection ~ 2650 9150
+Wire Wire Line
+	2650 9600 2300 9600
+Wire Wire Line
+	2300 9600 2300 9350
+Wire Wire Line
+	2300 9350 2200 9350
+Wire Wire Line
+	2650 9600 2650 9500
+$Comp
+L Device:C_Small C11
+U 1 1 616D7BD5
+P 2850 8900
+F 0 "C11" V 2621 8900 50  0000 C CNN
+F 1 "100n" V 2712 8900 50  0000 C CNN
+F 2 "" H 2850 8900 50  0001 C CNN
+F 3 "~" H 2850 8900 50  0001 C CNN
+	1    2850 8900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 8700 2850 8700
+Wire Wire Line
+	2850 8700 2850 8800
+Connection ~ 2650 8700
+Wire Wire Line
+	2850 9000 2850 9150
+Wire Wire Line
+	2850 9150 2650 9150
+$Comp
+L Device:C_Small C12
+U 1 1 6170DF3F
+P 2850 9400
+F 0 "C12" V 2621 9400 50  0000 C CNN
+F 1 "100n" V 2712 9400 50  0000 C CNN
+F 2 "" H 2850 9400 50  0001 C CNN
+F 3 "~" H 2850 9400 50  0001 C CNN
+	1    2850 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 9150 2850 9300
+Connection ~ 2850 9150
+Wire Wire Line
+	2850 9500 2850 9600
+Wire Wire Line
+	2850 9600 2650 9600
+Connection ~ 2650 9600
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 6174306B
+P 3300 9150
+F 0 "U1" H 3258 9196 50  0000 L CNN
+F 1 "TL074" H 3258 9105 50  0000 L CNN
+F 2 "" H 3250 9250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3350 9350 50  0001 C CNN
+	5    3300 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 8700 3200 8700
+Wire Wire Line
+	3200 8700 3200 8850
+Connection ~ 2850 8700
+Wire Wire Line
+	2850 9600 3200 9600
+Wire Wire Line
+	3200 9600 3200 9450
+Connection ~ 2850 9600
+$Comp
+L Device:C_Small C13
+U 1 1 6177EF5D
+P 3550 8900
+F 0 "C13" V 3321 8900 50  0000 C CNN
+F 1 "100n" V 3412 8900 50  0000 C CNN
+F 2 "" H 3550 8900 50  0001 C CNN
+F 3 "~" H 3550 8900 50  0001 C CNN
+	1    3550 8900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 8700 3550 8800
+Wire Wire Line
+	3550 9000 3550 9150
+$Comp
+L Device:C_Small C14
+U 1 1 6177EF66
+P 3550 9400
+F 0 "C14" V 3321 9400 50  0000 C CNN
+F 1 "100n" V 3412 9400 50  0000 C CNN
+F 2 "" H 3550 9400 50  0001 C CNN
+F 3 "~" H 3550 9400 50  0001 C CNN
+	1    3550 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 9150 3550 9300
+Connection ~ 3550 9150
+Wire Wire Line
+	3550 9500 3550 9600
+Wire Wire Line
+	3200 8700 3550 8700
+Connection ~ 3200 8700
+Wire Wire Line
+	3200 9600 3550 9600
+Connection ~ 3200 9600
+$Comp
+L Amplifier_Operational:TL074 U2
+U 5 1 617D89B9
+P 4000 9150
+F 0 "U2" H 3958 9196 50  0000 L CNN
+F 1 "TL074" H 3958 9105 50  0000 L CNN
+F 2 "" H 3950 9250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4050 9350 50  0001 C CNN
+	5    4000 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 8700 3900 8700
+Wire Wire Line
+	3900 8700 3900 8850
+Wire Wire Line
+	3550 9600 3900 9600
+Wire Wire Line
+	3900 9600 3900 9450
+$Comp
+L Device:C_Small C15
+U 1 1 617D89C3
+P 4250 8900
+F 0 "C15" V 4021 8900 50  0000 C CNN
+F 1 "100n" V 4112 8900 50  0000 C CNN
+F 2 "" H 4250 8900 50  0001 C CNN
+F 3 "~" H 4250 8900 50  0001 C CNN
+	1    4250 8900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 8700 4250 8800
+Wire Wire Line
+	4250 9000 4250 9150
+$Comp
+L Device:C_Small C16
+U 1 1 617D89CC
+P 4250 9400
+F 0 "C16" V 4021 9400 50  0000 C CNN
+F 1 "100n" V 4112 9400 50  0000 C CNN
+F 2 "" H 4250 9400 50  0001 C CNN
+F 3 "~" H 4250 9400 50  0001 C CNN
+	1    4250 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 9150 4250 9300
+Connection ~ 4250 9150
+Wire Wire Line
+	4250 9500 4250 9600
+Wire Wire Line
+	3900 8700 4250 8700
+Connection ~ 3900 8700
+Wire Wire Line
+	3900 9600 4250 9600
+Connection ~ 3900 9600
+Wire Wire Line
+	2850 9150 3550 9150
+Wire Wire Line
+	3550 9150 4250 9150
+$Comp
+L Amplifier_Operational:LM13700 U4
+U 5 1 6184B80E
+P 4750 9150
+F 0 "U4" H 4708 9196 50  0000 L CNN
+F 1 "LM13700" H 4708 9105 50  0000 L CNN
+F 2 "" H 4450 9175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4450 9175 50  0001 C CNN
+	5    4750 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9600 4650 9600
+Wire Wire Line
+	4650 9600 4650 9450
+Connection ~ 4250 9600
+Wire Wire Line
+	4250 8700 4650 8700
+Wire Wire Line
+	4650 8700 4650 8850
+Connection ~ 4250 8700
+$Comp
+L power:+12V #PWR044
+U 1 1 6189697E
+P 4650 8600
+F 0 "#PWR044" H 4650 8450 50  0001 C CNN
+F 1 "+12V" H 4665 8773 50  0000 C CNN
+F 2 "" H 4650 8600 50  0001 C CNN
+F 3 "" H 4650 8600 50  0001 C CNN
+	1    4650 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR045
+U 1 1 618A11A2
+P 4650 9700
+F 0 "#PWR045" H 4650 9800 50  0001 C CNN
+F 1 "-12V" H 4665 9873 50  0000 C CNN
+F 2 "" H 4650 9700 50  0001 C CNN
+F 3 "" H 4650 9700 50  0001 C CNN
+	1    4650 9700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 9600 4650 9700
+Connection ~ 4650 9600
+Wire Wire Line
+	4650 8700 4650 8600
+Connection ~ 4650 8700
+Connection ~ 3550 8700
+Connection ~ 3550 9600
+Wire Wire Line
+	1700 9350 1250 9350
+Connection ~ 1700 9350
+Wire Wire Line
+	1700 8950 1250 8950
+Connection ~ 1700 8950
 $EndSCHEMATC
